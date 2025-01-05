@@ -230,7 +230,7 @@ function sendWhatsApp() {
  // Codifica el mensaje para la URL
  const encodedMessage=
  encodeURIComponent(message);
- const phoneNumber="1150353429"; // Número de teléfono del vendedor
+ const phoneNumber="+54 9 1150353429"; // Número de teléfono del vendedor
  const whatsappURL=`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
 
  window.open(whatsappURL); // Abre la URL en una nueva pestaña
