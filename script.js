@@ -257,12 +257,3 @@ const checkScreenSize = () => {
       menu.style.display = 'flex';
     }
   };
-
-  // Alternar menú
-  toggleButton.addEventListener('click', () => {
-    menu.style.display = menu.style.display === 'none' ? 'flex' : 'none';
-  });
-
-  window.addEventListener('resize', checkScreenSize);
-  checkScreenSize();
-});
