@@ -1,0 +1,141 @@
+/* Estilo para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Fondo oscuro */
+    color: #0ef806; /* Texto blanco para mayor contraste */
+}
+
+/* Estilo para el encabezado */
+header {
+    background-image: url('fonditopa.jpg'); /* Ruta a la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el área del encabezado */
+    background-position: center; /* Centra la imagen */
+    color: rgba(10, 10, 10, 0.966); /* Color del texto */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para el contenedor de la barra de búsqueda */
+.search-container {
+    display: flex; /* Usar flexbox para centrar la barra */
+    justify-content: center; /* Centra horizontalmente */
+    margin: 50px; /* Espacio superior e inferior */
+}
+
+/* Estilo para la barra de búsqueda */
+#search-bar {
+    width: 100%; /* Ancho completo */
+    max-width: 699px; /* Ancho máximo */
+    padding: 9px; /* Relleno interno */
+    margin: -28px auto 20px; /* Margen superior negativo, centrado horizontalmente y margen inferior */
+    border-radius: 22px; /* Bordes redondeados */
+    border: 3px solid #00fff2; /* Borde verde claro */
+    background-color: #2a2a2a; /* Fondo oscuro para la barra */
+    color: white; /* Color del texto */
+}
+
+/* Contenedor principal para productos y carrito */
+.content-container {
+    display: flex; /* Usar flexbox para alinear productos y carrito */
+}
+
+/* Estilo para la lista de productos */
+#product-list {
+    display: flex; /* Asegúrate de que el contenedor de productos use flexbox */
+    flex-wrap: wrap; /* Permite que los productos se ajusten en varias filas */
+    justify-content: center; /* Centra los productos en el contenedor */
+    flex-grow: 1; /* Permite que el contenedor de productos crezca */
+}
+
+/* Estilo para cada producto */
+.product {
+    background-color: #2a2a2a; /* Fondo del producto */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 10px; /* Margen entre productos */
+    padding: 10px; /* Relleno reducido para hacerlos más compactos */
+    text-align: center;
+    width: 150px; /* Ancho del contenedor del producto ajustado a un tamaño más pequeño */
+}
+
+.product img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Efecto hover futurista para productos */
+.product:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+    box-shadow: 0 8px 30px rgba(0, 255, 204, 0.7); /* Sombra más intensa al pasar el ratón */
+}
+
+/* Estilo para el carrito (sin cambios)*/
+#cart {
+   background-color: rgba(42, 42, 42, 0.9); /* Fondo del carrito con transparencia */
+   border-radius: 15px; /* Bordes redondeados */
+   margin-left: 20px; /* Espacio entre productos y carrito */
+   padding: 20px;
+   width: 350px; /* Ancho del carrito */
+   max-height: 600px; /* Altura máxima del carrito */
+   display: flex; /* Usar flexbox para organizar el contenido */
+   flex-direction: column; /* Organizar elementos en columna */
+}
+
+/* Estilo para centrar el título del carrito */
+.cart-title {
+   text-align: center; /* Centra el texto horizontalmente */
+   width: 100%; /* Asegura que ocupe todo el ancho disponible */
+   margin-bottom: 10px; /* Espacio inferior para separación */
+}
+
+/* Estilo para los elementos dentro del carrito (sin cambios)*/
+#cart-items {
+   flex-grow: 1;
+   overflow-y: auto;
+}
+
+.cart-item {
+   background-color: #2a2a2a;
+   border-radius: 10px;
+   margin-bottom: 10px;
+   padding: 10px;
+}
+
+/* Estilo específico para los botones en el carrito y catálogo (sin cambios)*/
+button {
+   background-color: #00ffcc;
+   color: #121212;
+   border: none;
+   padding: 5px 10px;
+   cursor: pointer;
+   border-radius: 5px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+/* Estilo específico para el botón de WhatsApp (sin cambios)*/
+#send-whatsapp {
+   background-color: #25D366;
+}
+
+#send-whatsapp:hover {
+   background-color: #128C7E;
+}
+
+/* Estilo para los métodos de pago (sin cambios)*/
+.payment-methods {
+   display: flex;
+   justify-content: center;
+   margin-top: 15px;
+}
+
+.payment-methods img {
+   width: auto;
+   max-width: 250px;
+   height:auto;
+}
+
+.anuncio {
+    color: azure;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Super Mercado Online </h1>
+        <div class="cart">
+            <span>Carrito:</span> <span id="cart-count">0</span> artículos
+        </div>
+    </header>
+
+    <main>
+       <!-- Barra de búsqueda -->
+       <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Buscar producto..." oninput="filterProducts()">
+    </div>
+
+        <!-- Contenedor para productos y carrito -->
+        <div class="content-container">
+            <!-- Lista de productos -->
+            <section id="product-list">
+                <!-- Productos se añadirán aquí dinámicamente -->
+            </section>
+
+            <!-- Carrito -->
+            <aside id="cart">
+                <h2 class="cart-title">Carrito De Compras</h2>
+                <div id="cart-items"></div>
+                <p id="total-price">Total: $0</p>
+                <button id="send-whatsapp" onclick="sendWhatsApp()">Enviar al vendedor</button>
+                <button id="calculate-shipping" onclick="calculateShipping()">Calcular Envío</button>
+                <p id="shipping-cost"></p>
+
+        
+                <h2 class="anuncio">superando la compra minima de 50 mil
+                    el envio es gratis superando</h2>
+
+                <h3>Métodos de Pago</h3>
+                <div class="payment-methods">
+                    <img src="mercadopago.png" alt="Métodos de Pago" />
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
