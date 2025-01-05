@@ -248,3 +248,21 @@ function filterProducts() {
 
 // Inicializar la tienda y renderizar todos los productos al cargar la página.
 renderProducts(products);
+const checkScreenSize = () => {
+    if (window.innerWidth <= 768) {
+      toggleButton.style.display = 'block';
+      menu.style.display = 'none';
+    } else {
+      toggleButton.style.display = 'none';
+      menu.style.display = 'flex';
+    }
+  };
+
+  // Alternar menú
+  toggleButton.addEventListener('click', () => {
+    menu.style.display = menu.style.display === 'none' ? 'flex' : 'none';
+  });
+
+  window.addEventListener('resize', checkScreenSize);
+  checkScreenSize();
+});
